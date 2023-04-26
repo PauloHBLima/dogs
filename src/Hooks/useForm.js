@@ -7,7 +7,7 @@ const types = {
     message: 'Preencha um email válido',
   },
 };
-function useForm(type) {
+const useForm = (type) => {
   const [value, setValue] = React.useState('');
   const [error, setError] = React.useState(null);
 
@@ -26,6 +26,7 @@ function useForm(type) {
   }
 
   function onChange({ target }) {
+    if(error) validate(target.value);
     setValue(target.value);
   }
 
@@ -35,7 +36,7 @@ function useForm(type) {
     onChange,
     error,
     validate: () => validate(value),
-    onBlur: () => validade(value),
+    onBlur: () => validate(value),
   };
 }
 
