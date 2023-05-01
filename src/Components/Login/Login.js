@@ -7,8 +7,9 @@ import LoginPasswordReset from './LoginPasswordReset';
 import { UserContext } from '../../UserContext';
 import styles from './Login.module.css';
 
-function Login() {
+const Login = () => {
   const { login } = React.useContext(UserContext);
+
   if (login === true) return <Navigate to="/conta" />;
 
   return (

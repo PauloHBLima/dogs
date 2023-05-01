@@ -58,7 +58,7 @@ async function getUser(token) {
           const response = await fetch(url, options)
           if(!response.ok) throw new Error('Token Inválido');
         await getUser(token);
-        } catch (error) {
+        } catch (err) {
           userLogout()
         } finally {
           setLoading(false)
