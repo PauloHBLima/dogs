@@ -16,7 +16,6 @@ const LoginForm = () => {
 
   async function handleLogin(event) {
     event.preventDefault();
-
     if (username.validate() && password.validate()) {
       userLogin(username.value, password.value);
     }
@@ -29,11 +28,11 @@ const LoginForm = () => {
         <Input label="Usuário" type="text" name="username" {...username} />
         <Input label="Senha" type="password" name="password" {...password} />
         {loading ? (
-          <Button disable>Carregando ...</Button>
+          <Button disabled>Carregando ...</Button>
         ) : (
           <Button>Entrar</Button>
         )}
-        <Error error={error} />
+        <Error error={error && 'Dados incorretos.'} />
       </form>
       <Link className={styles.perdeu} to="/login/perdeu">
         Perdeu a senha?
