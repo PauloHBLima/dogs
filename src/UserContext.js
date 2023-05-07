@@ -43,7 +43,7 @@ export const UserStorage = ({ children }) => {
     } finally {
       setLoading(false);
     }
-  }
+  } 
 
   React.useEffect(() => {
     async function autoLogin() {
