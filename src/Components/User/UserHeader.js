@@ -20,7 +20,6 @@ React.useEffect(()=> {
         default: 
         setTitle('Minha conta')
   }
-  if('conta/estatisticas' === location.pathname) setTitle('Estatisticas')
 }, [location]);
 
   return (
