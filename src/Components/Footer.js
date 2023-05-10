@@ -3,7 +3,7 @@ import styles from './Header.module.css'
 
 function Footer() {
   return (
-    <div className={styles.Footer}>Footer</div>
+    <div className={styles.Footer}></div>
   )
 }
 

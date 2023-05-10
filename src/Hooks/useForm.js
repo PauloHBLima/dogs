@@ -11,6 +11,10 @@ const types = {
     /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])[0-9a-zA-Z$*&@#]{8,}$/,
     message: "Precisa possuir no mínimo 8 caracteres, variedade de letras maiúsculas e minúsculas, números e caractere especial."
   },
+  number: {
+    regex: /^\d+$/,
+    message: 'Utilize apenas números'
+  }
 };
 const useForm = (type) => {
   const [value, setValue] = React.useState('');
