@@ -1,14 +1,14 @@
-import React from 'react';
-import FeedPhotos from './FeedPhotos';
-import FeedModal from './feedModal';
+import React from 'react'
+import FeedModal from './feedModal'
+import FeedFotos from './FeedFotos'
 
 const Feed = () => {
   return (
     <div>
       <FeedModal />
-      <FeedPhotos />
+      <FeedFotos/>
     </div>
-  );
-};
+  )
+}
 
-export default Feed;
+export default Feed
