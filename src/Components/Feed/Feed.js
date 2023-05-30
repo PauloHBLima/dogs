@@ -39,7 +39,7 @@ const Feed = ({ user }) => {
       {modalPhoto && (
         <FeedModal photo={modalPhoto} setModalPhoto={setModalPhoto} />
       )}
-      const [pages, setPages] = React.useState([1,2]);
+      {/* const [pages, setPages] = React.useState([1,2]); */}
       {pages.map((page) => (
         <FeedFotos
           key={page}
